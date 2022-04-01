@@ -1,0 +1,69 @@
+// PalView.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (PalView.tlb) that will become a resource in
+// PalView.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(7F7767C0-365B-11D0-9C9D-00A0D100E3C8), version(1.0),
+  helpfile("PalView.hlp"),
+  helpstring("PalView ActiveX Control module"),
+  control ]
+library PALVIEWLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CPalViewCtrl
+
+	[ uuid(7F7767C1-365B-11D0-9C9D-00A0D100E3C8),
+	  helpstring("Dispatch interface for PalView Control"), hidden ]
+	dispinterface _DPalView
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CPalViewCtrl)
+			[id(1)] BSTR DibFileName;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CPalViewCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CPalViewCtrl
+
+	[ uuid(7F7767C2-365B-11D0-9C9D-00A0D100E3C8),
+	  helpstring("Event interface for PalView Control") ]
+	dispinterface _DPalViewEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CPalViewCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CPalViewCtrl
+
+	[ uuid(7F7767C3-365B-11D0-9C9D-00A0D100E3C8),
+	  helpstring("PalView Control"), control ]
+	coclass PalView
+	{
+		[default] dispinterface _DPalView;
+		[default, source] dispinterface _DPalViewEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+};

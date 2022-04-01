@@ -1,0 +1,286 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ADODialog.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ADODialog.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ADODialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ADODialog Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+CG_IDD_RECORDSET DIALOG DISCARDABLE  0, 0, 295, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Employee Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,218,165,52,14
+    PUSHBUTTON      "Cancel",2,218,189,51,14
+    LTEXT           "Address",1005,24,110,47,9
+    EDITTEXT        2005,79,109,92,13,ES_AUTOHSCROLL
+    LTEXT           "City",1006,23,130,47,9
+    EDITTEXT        2006,80,129,92,13,ES_AUTOHSCROLL
+    LTEXT           "Country",1008,23,173,47,9
+    EDITTEXT        2008,79,171,93,13,ES_AUTOHSCROLL
+    LTEXT           "EmployeeID",1001,23,34,47,9
+    EDITTEXT        2001,79,32,91,13,ES_AUTOHSCROLL
+    LTEXT           "FirstName",1003,23,72,47,9
+    EDITTEXT        2003,79,71,92,13,ES_AUTOHSCROLL
+    LTEXT           "HomePhone",1009,23,194,47,9
+    EDITTEXT        2009,79,192,92,13,ES_AUTOHSCROLL
+    LTEXT           "LastName",1002,23,52,47,9
+    EDITTEXT        2002,79,51,92,13,ES_AUTOHSCROLL
+    LTEXT           "Region",1007,23,151,47,9
+    EDITTEXT        2007,79,150,92,13,ES_AUTOHSCROLL
+    LTEXT           "Title",1004,23,91,47,9
+    EDITTEXT        2004,79,90,92,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "<<",204,21,10,18,14
+    PUSHBUTTON      "<",201,39,10,18,14
+    PUSHBUTTON      ">",202,57,10,18,14
+    PUSHBUTTON      ">>",203,75,10,18,14
+    PUSHBUTTON      "Add",ID_ADD,94,10,21,14
+    PUSHBUTTON      "Delete",ID_DELETE,115,10,26,14
+    PUSHBUTTON      "Update",ID_UPDATE,141,10,27,14
+    PUSHBUTTON      "Set Filter",ID_FILTER,215,32,50,12
+    PUSHBUTTON      "Reset Filter",ID_RESETFILTER,215,47,50,12
+    GROUPBOX        "Filter Records",IDC_STATIC,207,18,63,48
+END
+
+IDD_QUERY DIALOG DISCARDABLE  0, 0, 260, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Filter Records"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,133,107,50,14
+    GROUPBOX        "Operators",IDC_STATIC,108,18,47,75
+    EDITTEXT        ID_VALUE,173,38,68,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ">",ID_GREATER,123,30,17,11
+    PUSHBUTTON      "<",ID_LESSER,123,45,17,11
+    PUSHBUTTON      "=",ID_EQUAL,124,59,17,11
+    PUSHBUTTON      "Like",ID_LIK,124,74,17,11
+    COMBOBOX        ID_FIELD,17,38,71,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Set Condition",IDOK,64,107,49,14
+    LTEXT           "Field Name",IDC_STATIC,18,25,69,10
+    LTEXT           "Value",IDC_STATIC,173,26,59,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ADODialog MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ADODialog\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ADODialog.EXE\0"
+            VALUE "ProductName", "ADODialog Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    CG_IDD_RECORDSET, DIALOG
+    BEGIN
+        RIGHTMARGIN, 284
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_QUERY DLGINIT
+BEGIN
+    ID_FIELD, 0x403, 11, 0
+0x6d45, 0x6c70, 0x796f, 0x6565, 0x4449, "\000" 
+    ID_FIELD, 0x403, 9, 0
+0x614c, 0x7473, 0x614e, 0x656d, "\000" 
+    ID_FIELD, 0x403, 10, 0
+0x6946, 0x7372, 0x4e74, 0x6d61, 0x0065, 
+    ID_FIELD, 0x403, 6, 0
+0x6954, 0x6c74, 0x0065, 
+    ID_FIELD, 0x403, 8, 0
+0x6441, 0x7264, 0x7365, 0x0073, 
+    ID_FIELD, 0x403, 5, 0
+0x6943, 0x7974, "\000" 
+    ID_FIELD, 0x403, 7, 0
+0x6552, 0x6967, 0x6e6f, "\000" 
+    ID_FIELD, 0x403, 8, 0
+0x6f43, 0x6e75, 0x7274, 0x0079, 
+    ID_FIELD, 0x403, 10, 0
+0x6f48, 0x656d, 0x6850, 0x6e6f, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ADODialog..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ADODialog.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
